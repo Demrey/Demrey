@@ -1,0 +1,40 @@
+<view>
+    <text class="stockName">{{ stockName }}</text>
+</view>
+
+<view>
+    <mp-row>
+        <mp-col span="{{ 8 }}">
+            <mp-row>
+                <text class="currentPriceRed">{{ currentPrice }}</text>
+            </mp-row>
+            <mp-row class="leftData">
+                <text>{{ currentPic }}</text>
+                <text>{{ currentRiseOrFall }}</text>
+            </mp-row>
+        </mp-col>
+        
+        <mp-col span="{{ 16 }}">
+            <mp-row class="rightData">
+                <text>{{ todayMax }}</text>
+                <text>{{ todayStartPri }}</text>
+                <text>{{ traNumber }}</text>
+            </mp-row>
+            <mp-row class="rightData">
+                <text>{{ todayMin }}</text>
+                <text>{{ yestodEndPri }}</text>
+                <text>{{ traAmount }}</text>
+            </mp-row>
+        </mp-col>
+    </mp-row>
+
+
+</view>
+
+<l-segment bind:linchange="cardChange" active-key="one">
+    <l-segment-item tab="分时" key="one" />
+    <l-segment-item tab="日k" key="two" />
+    <l-segment-item tab="周k" key="three" />
+    <l-segment-item tab="月k" key="four" />
+</l-segment>
+<image src="{{ pictureUrl }}" />

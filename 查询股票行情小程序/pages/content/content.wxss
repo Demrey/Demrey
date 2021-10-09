@@ -1,0 +1,24 @@
+.stockName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.currentPriceRed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70rpx;
+}
